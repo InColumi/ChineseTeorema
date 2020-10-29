@@ -45,9 +45,9 @@ int* InputRemains(int*  divisors, int size)
 	{
 		cout << "a[" << i << "] = ";
 		cin >> remains[i];
-		if(remains[i] > divisors[i])
+		if(remains[i] > divisors[i] || remains[i] < 0)
 		{
-			cout << "ќстаток не может быть больше делител€!\n";
+			cout << "ќстаток не может быть отрицательными или больше делител€!\n";
 			exit(0);
 		}
 	}
